@@ -8,7 +8,7 @@ public class Moving : MonoBehaviour
     public float speed;
     Vector3 targetPos;
 
-    public GameObject ways;
+    public GameObject way;
     public Transform[] wayPoints;
     int pointIndex;
     int pointCount;
@@ -18,10 +18,10 @@ public class Moving : MonoBehaviour
 
     private void Awake()
     {
-        wayPoints = new Transform[ways.transform.childCount];
-        for (int i = 0; i < ways.gameObject.transform.childCount; i++)
+        wayPoints = new Transform[way.transform.childCount];
+        for (int i = 0; i < way.gameObject.transform.childCount; i++)
         {
-            wayPoints[i] = ways.transform.GetChild(i).gameObject.transform;
+            wayPoints[i] = way.transform.GetChild(i).gameObject.transform;
         }
     }
 
