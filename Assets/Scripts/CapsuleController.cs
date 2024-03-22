@@ -7,6 +7,8 @@ public class CapsuleController : MonoBehaviour
     public float alternateFallSpeed = 5f; // Alternate maximum fall speed
     public Color defaultColor = Color.white; // Default color
     public Color alternateColor = Color.red; // Alternate color
+    public ParticleSystem particleSystem1; // Reference to the first particle system
+    public ParticleSystem particleSystem2; // Reference to the second particle system
 
     private Rigidbody2D rb;
     private float maxFallSpeed; // Current maximum fall speed
@@ -18,6 +20,9 @@ public class CapsuleController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         maxFallSpeed = defaultFallSpeed; // Start with default fall speed
         spriteRenderer = GetComponent<SpriteRenderer>();
+        // Disable the particle systems at the start
+        particleSystem1.Stop();
+        particleSystem2.Stop();
     }
 
     void Update()
@@ -27,7 +32,9 @@ public class CapsuleController : MonoBehaviour
         {
             StartCoroutine(SmoothFallSpeedTransition(defaultFallSpeed, alternateFallSpeed, 0.5f));
             spaceBarPressed = true;
-
+            // Start the particle systems when space key is pressed
+            particleSystem1.Play();
+            particleSystem2.Play();
             // Change color based on fall speed
             spriteRenderer.color = alternateColor;
         }
@@ -37,6 +44,9 @@ public class CapsuleController : MonoBehaviour
         {
             spaceBarPressed = false;
             StartCoroutine(SmoothFallSpeedTransition(alternateFallSpeed, defaultFallSpeed, 0.5f));
+            // Stop the particle systems when space key is released
+            particleSystem1.Stop();
+            particleSystem2.Stop();
             spriteRenderer.color = defaultColor; // Reset color to default
         }
     }
@@ -62,3 +72,4 @@ public class CapsuleController : MonoBehaviour
         }
     }
 }
+
