@@ -27,4 +27,4 @@ public class activate_invisibility : MonoBehaviour
     }
 }
 
-//ACTIVATE invincibility TO PREVENT PLAYER TO DIE AND TURN isEnable FROM lamort BACK TO ACTIVE TO KILL A PLAYER 
+//ACTIVATE invincibility TO PREVENT PLAYER TO DIE AND TURN isEnable FROM "lamort" BACK TO ACTIVE TO KILL A PLAYER 

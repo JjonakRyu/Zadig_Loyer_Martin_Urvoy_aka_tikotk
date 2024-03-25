@@ -17,7 +17,7 @@ public class invincibility : MonoBehaviour
 }
 
 //NEED TO BE ACTIVATED BY activate_invisibility
-//WHEN ACTIVATED THIS SCRIPT DISABLE THE SCRIPT THAT KILL THE PLAYER
+//WHEN ACTIVATED THIS SCRIPT DISABLE THE SCRIPT "lamort" THAT KILL THE PLAYER
 
 
 //void Start()
