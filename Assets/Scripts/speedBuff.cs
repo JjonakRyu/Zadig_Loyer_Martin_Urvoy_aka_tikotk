@@ -28,6 +28,7 @@ public class SpeedBuff : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        player.GetComponent<CapsuleController>().enabled = false;
         rb = player.GetComponent<Rigidbody2D>();
         rb.gravityScale = newSpeed;
         StartCoroutine(changeSpped());
@@ -37,5 +38,6 @@ public class SpeedBuff : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         rb.gravityScale = endSpeed;
+        player.GetComponent<CapsuleController>().enabled = true;
     }
 }
