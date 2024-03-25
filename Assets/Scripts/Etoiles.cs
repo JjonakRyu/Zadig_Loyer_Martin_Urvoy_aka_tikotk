@@ -1,16 +1,16 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class SpeedBuff : MonoBehaviour
+public class Etoiles : MonoBehaviour
 {
     public GameObject player;
-    public float newSpeed = 1.0f;
+    public GameObject booster;
     private Rigidbody2D rb;
+    public float newSpeed = 1.0f;
     public float duration = 1.0f;
     public float endSpeed = 1.0f;
+
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
@@ -29,6 +29,7 @@ public class SpeedBuff : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         player.GetComponent<CapsuleController>().enabled = false;
+        booster.SetActive(false);
         rb = player.GetComponent<Rigidbody2D>();
         rb.gravityScale = newSpeed;
         StartCoroutine(changeSpped());
@@ -39,5 +40,6 @@ public class SpeedBuff : MonoBehaviour
         yield return new WaitForSeconds(duration);
         rb.gravityScale = endSpeed;
         player.GetComponent<CapsuleController>().enabled = true;
+        booster.SetActive(true);
     }
 }
