@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - death
+  - CheckPoint
+  - Death_Plat
   layers:
   - Default
   - TransparentFX
