@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 635c579edc553b74396b14d778815b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 10
   way: {fileID: 5925253292455940803}
   wayPoints: []
   wait: 0
