@@ -6,9 +6,11 @@ using UnityEngine.SceneManagement;
 public class Death : MonoBehaviour
 {
     public string sceneName;
+    public bool isEnabled = true;
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (isEnabled && collision.CompareTag("Player"))
         {
             SceneManager.LoadSceneAsync(sceneName);
         }

@@ -12,9 +12,7 @@ GameObject:
   - component: {fileID: 4375743382490306418}
   - component: {fileID: 2903198860396169358}
   - component: {fileID: 6040960481714914541}
-  - component: {fileID: 9025189298443117942}
-  - component: {fileID: 1690920239935552743}
-  - component: {fileID: 449382680254385199}
+  - component: {fileID: 4585816759078228260}
   m_Layer: 0
   m_Name: speedBuff
   m_TagString: Untagged
@@ -151,7 +149,7 @@ MonoBehaviour:
   newSpeed: 1.8
   duration: 3
   endSpeed: 1.2
---- !u!114 &9025189298443117942
+--- !u!114 &4585816759078228260
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -163,29 +161,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1ffde9f1ab576458ce9db732d50361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1690920239935552743
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848298827834421455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed1ffde9f1ab576458ce9db732d50361, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &449382680254385199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7848298827834421455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c065f5e7dec5704439cc4849a72c04ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invincibilityDuration: 1
-  invincibility: {fileID: 7848298827834421455}
+  invincibilityDuration: 5

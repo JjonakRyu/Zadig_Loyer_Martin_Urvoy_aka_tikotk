@@ -2,42 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class invincibility : MonoBehaviour
+public class Invincibility : MonoBehaviour
 {
-    private void Update()
-    {
-        GameObject[] deathObjects;
-        deathObjects = GameObject.FindGameObjectsWithTag("death");
 
-        foreach (GameObject deathObject in deathObjects)
+    public float invincibilityDuration = 1.0f;
+    private GameObject[] _DeathObjects;
+
+    void Update()
+    {
+        _DeathObjects = GameObject.FindGameObjectsWithTag("death");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        foreach (GameObject deathObject in _DeathObjects)
         {
-            deathObject.GetComponent<lamort>().isEnabled = false;
+            deathObject.GetComponent<Death>().isEnabled = false;
+        }
+
+        StartCoroutine(Invicibilitytime());
+    }
+
+    IEnumerator Invicibilitytime()
+    {
+        yield return new WaitForSeconds(invincibilityDuration);
+
+        //GameObject[] deathObjects;
+        //deathObjects = GameObject.FindGameObjectsWithTag("death");
+
+        foreach (GameObject deathObject in _DeathObjects)
+        {
+            deathObject.GetComponent<Death>().isEnabled = true;
         }
     }
 }
-
-//NEED TO BE ACTIVATED BY activate_invisibility
-//WHEN ACTIVATED THIS SCRIPT DISABLE THE SCRIPT "lamort" THAT KILL THE PLAYER
-
-
-//void Start()
-//{
-//    GameObject[] deathObjects;
-//    deathObjects = GameObject.FindGameObjectsWithTag("death");
-
-//    foreach (GameObject deathObject in deathObjects)
-//    {
-//        deathObject.GetComponent<lamort>().isEnabled = false;
-//    }
-
-//}
-//private void OnCollisionEnter2D(Collision2D collision)
-//{
-//    GameObject[] deathObjects;
-//    deathObjects = GameObject.FindGameObjectsWithTag("death");
-
-//    foreach (GameObject deathObject in deathObjects)
-//    {
-//        deathObject.GetComponent<lamort>().isEnabled = false;
-//    }
-//}

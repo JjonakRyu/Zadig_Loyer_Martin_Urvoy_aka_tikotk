@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7263173147685284216}
   - component: {fileID: 4429675699993920198}
   - component: {fileID: 2539900915225026069}
-  - component: {fileID: 9152468769884616398}
+  - component: {fileID: 6118146176211006296}
   m_Layer: 0
   m_Name: Platform
   m_TagString: death
@@ -148,7 +148,7 @@ MonoBehaviour:
   way: {fileID: 5925253292455940803}
   wayPoints: []
   wait: 0
---- !u!114 &9152468769884616398
+--- !u!114 &6118146176211006296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3552930136617534257}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c70f9862d5862f4c8c5ad0ce0a02f6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d47fc26625787a48b1d84f69a538233, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Game
