@@ -17,7 +17,7 @@ public class Invincibility : MonoBehaviour
     {
         foreach (GameObject deathObject in _DeathObjects)
         {
-            deathObject.GetComponent<Death>().isEnabled = false;
+            deathObject.GetComponent<PlayerLife>().isEnabled = false;
         }
 
         StartCoroutine(Invicibilitytime());
@@ -32,7 +32,7 @@ public class Invincibility : MonoBehaviour
 
         foreach (GameObject deathObject in _DeathObjects)
         {
-            deathObject.GetComponent<Death>().isEnabled = true;
+            deathObject.GetComponent<PlayerLife>().isEnabled = true;
         }
     }
 }

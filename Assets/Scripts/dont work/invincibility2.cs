@@ -15,7 +15,7 @@ public class invincibility2 : MonoBehaviour
         foreach (GameObject deathObject in deathObjects)
         {
 
-            Death deathScript = deathObject.GetComponent<Death>();
+            PlayerLife deathScript = deathObject.GetComponent<PlayerLife>();
             if (deathScript != null)
             {
                 deathScript.enabled = false;

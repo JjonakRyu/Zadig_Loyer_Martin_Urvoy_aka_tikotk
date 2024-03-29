@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/lv2.unity
+    guid: bad5cf5ce4fea0a43946be21b8bc265d
+  - enabled: 1
+    path: Assets/Scenes/lv3.unity
+    guid: 7d5a893837e22ce47936fe8a9801f427
+  - enabled: 1
+    path: Assets/Scenes/TG ZADIG.unity
+    guid: 95851dcb0ee2b1343993c9ee6a65e12c
+  - enabled: 1
+    path: Assets/Scenes/SelectionLV.unity
+    guid: e206b18689a7e764d9f3281938cc130a
   m_configObjects: {}
