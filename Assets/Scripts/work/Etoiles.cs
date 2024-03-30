@@ -29,6 +29,7 @@ public class Etoiles : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         player.GetComponent<CapsuleController>().enabled = false;
+        player.GetComponent<PlayerLife>().enabled = false;
         booster.SetActive(false);
         rb = player.GetComponent<Rigidbody2D>();
         rb.gravityScale = newSpeed;
