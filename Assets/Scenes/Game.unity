@@ -122243,6 +122243,10 @@ PrefabInstance:
       propertyPath: _deathUI2
       value: 
       objectReference: {fileID: 125660271}
+    - target: {fileID: 2247124931662538743, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 6115100217159764986}
     - target: {fileID: 2697219083205794675, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
       propertyPath: m_RootOrder
       value: 2
