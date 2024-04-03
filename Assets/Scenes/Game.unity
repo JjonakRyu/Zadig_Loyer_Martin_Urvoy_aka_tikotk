@@ -22842,6 +22842,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackGround
       objectReference: {fileID: 0}
+    - target: {fileID: 7539566061248421688, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 692990326}
+    - target: {fileID: 7539566061248421688, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
+      propertyPath: booster
+      value: 
+      objectReference: {fileID: 692990325}
+    - target: {fileID: 7539566061248421688, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 692990324}
     - target: {fileID: 7680225998380055260, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -42727,6 +42739,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
+--- !u!1 &692990324 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8849687378665363452, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
+  m_PrefabInstance: {fileID: 692990323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &692990325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5962039859965995013, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
+  m_PrefabInstance: {fileID: 692990323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &692990326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5368601948006904691, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
+  m_PrefabInstance: {fileID: 692990323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &693049049
 GameObject:
   m_ObjectHideFlags: 0

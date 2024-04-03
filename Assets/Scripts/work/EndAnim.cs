@@ -8,6 +8,7 @@ public class EndAnim : MonoBehaviour
     public GameObject explosion;
     public GameObject booster;
     public GameObject virtualCamera;
+    public GameObject dust;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,6 +17,7 @@ public class EndAnim : MonoBehaviour
         player.GetComponent<SpriteRenderer>().enabled = false;
         booster.SetActive(false);
         explosion.SetActive(true);
+        dust.SetActive(true);
         virtualCamera.GetComponent<Animator>().Play("AnimCrash");
     }
 }

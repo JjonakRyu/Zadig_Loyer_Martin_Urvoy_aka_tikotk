@@ -20805,6 +20805,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BackGround
       objectReference: {fileID: 0}
+    - target: {fileID: 7539566061248421688, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1974558925}
+    - target: {fileID: 7539566061248421688, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
+      propertyPath: booster
+      value: 
+      objectReference: {fileID: 1215814680}
+    - target: {fileID: 7539566061248421688, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 1215814677}
     - target: {fileID: 7680225998380055260, guid: 7d2051cdb43e7c54fa27169527347fdf, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -22025,6 +22037,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b71e5bcc26eb7f428b7c88260650e8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1215814680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5962039859965995013, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
+  m_PrefabInstance: {fileID: 1215814676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1217776658
 GameObject:
   m_ObjectHideFlags: 0
