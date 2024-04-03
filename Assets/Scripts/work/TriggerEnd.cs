@@ -8,6 +8,7 @@ public class TriggerEnd : MonoBehaviour
     public Color defaultColor = Color.white;
     public ParticleSystem particleSystem1;
     public ParticleSystem particleSystem2;
+    public GameObject virtualCamera;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,6 +17,7 @@ public class TriggerEnd : MonoBehaviour
         player.GetComponent<Rigidbody2D>().gravityScale = 1.8f;
         particleSystem1.Stop();
         particleSystem2.Stop();
+        virtualCamera.GetComponent<Animator>().Play("AnimOut");
     }
 
 }

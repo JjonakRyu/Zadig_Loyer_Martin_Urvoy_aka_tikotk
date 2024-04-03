@@ -7927,6 +7927,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 110374215}
     - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 1682778773}
+    - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
       propertyPath: particleSystem1
       value: 
       objectReference: {fileID: 633200763}
