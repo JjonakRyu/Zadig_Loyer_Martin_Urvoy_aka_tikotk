@@ -6,6 +6,8 @@ public class TriggerInvincibility : MonoBehaviour
 {
     public GameObject effect;
     public GameObject plateform;
+    public GameObject repere1;
+    public GameObject repere2;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,6 +15,8 @@ public class TriggerInvincibility : MonoBehaviour
         {
             effect.SetActive(true);
             plateform.GetComponent<SpriteRenderer>().enabled = false;
+            repere1.GetComponent<SpriteRenderer>().enabled = false;
+            repere2.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }
