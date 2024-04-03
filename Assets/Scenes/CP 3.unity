@@ -15483,10 +15483,6 @@ PrefabInstance:
       propertyPath: _CPScene
       value: CP 3
       objectReference: {fileID: 0}
-    - target: {fileID: 295601881192275390, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
-      propertyPath: _mainScene
-      value: lv3
-      objectReference: {fileID: 0}
     - target: {fileID: 1121165605047413207, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

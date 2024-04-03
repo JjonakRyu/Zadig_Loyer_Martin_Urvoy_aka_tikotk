@@ -12,7 +12,7 @@ public class PlayerLife : MonoBehaviour
     public GameObject _playerEffect;
     public GameObject _deathUI;
     public GameObject _deathUI2;
-    //public GameObject virtualCamera;
+    public GameObject virtualCamera;
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class PlayerLife : MonoBehaviour
             _particleDeath.SetActive(true);
             _playerEffect.SetActive(false);
             _player.GetComponent<Rigidbody2D>().simulated = false;
-            //virtualCamera.GetComponent<Animator>().Play("AnimDeath");
+            virtualCamera.GetComponent<Animator>().Play("AnimDeath");
 
             StartCoroutine(AnimationDeath());
         }
@@ -46,7 +46,7 @@ public class PlayerLife : MonoBehaviour
             _particleDeath.SetActive(true);
             _playerEffect.SetActive(false);
             _player.GetComponent<Rigidbody2D>().simulated = false;
-            //virtualCamera.GetComponent<Animator>().Play("AnimDeath");
+            virtualCamera.GetComponent<Animator>().Play("AnimDeath");
 
             StartCoroutine(AnimationDeath2());
         }

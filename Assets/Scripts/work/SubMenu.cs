@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SubMenu : MonoBehaviour
 {
-    public string _mainScene;
     public string _CPScene;
     public void Menu()
     {
@@ -25,16 +24,6 @@ public class SubMenu : MonoBehaviour
     public void Lv3()
     {
         SceneManager.LoadSceneAsync(3);
-    }
-
-    public void Lv4()
-    {
-        SceneManager.LoadSceneAsync(4);
-    }
-
-    public void mainScene()
-    {
-        SceneManager.LoadSceneAsync(_mainScene);
     }
 
     public void CPScene()

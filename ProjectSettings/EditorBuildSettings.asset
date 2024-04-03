@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SelectionLV.unity
     guid: e206b18689a7e764d9f3281938cc130a
+  - enabled: 1
+    path: Assets/Scenes/CP 1.unity
+    guid: 79f57f15daf516a47b2bba5a0f62f220
+  - enabled: 1
+    path: Assets/Scenes/CP 2.unity
+    guid: 51119f096a01dd64b85b49607279cb2b
+  - enabled: 1
+    path: Assets/Scenes/CP 3.unity
+    guid: 7a85c048e453a1748a431abef495521a
   m_configObjects: {}
