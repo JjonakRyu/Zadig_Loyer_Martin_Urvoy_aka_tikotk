@@ -37173,7 +37173,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2697219083205794675, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1174
+      value: -294.04
       objectReference: {fileID: 0}
     - target: {fileID: 2697219083205794675, guid: 6aa1f0126df32264ab70a2a6ea94fa80, type: 3}
       propertyPath: m_LocalPosition.z
@@ -64328,6 +64328,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1974558925}
     - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 1215814677}
+    - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
       propertyPath: particleSystem1
       value: 
       objectReference: {fileID: 222051210}
@@ -64735,7 +64739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037589369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1400013, y: -1173.0233, z: -2}
+  m_LocalPosition: {x: 0.1400013, y: -293.06332, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
