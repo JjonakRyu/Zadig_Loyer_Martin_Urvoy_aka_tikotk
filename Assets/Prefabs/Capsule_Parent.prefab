@@ -10220,7 +10220,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10268,6 +10268,8 @@ MonoBehaviour:
   _particleDeath: {fileID: 8304934267717631906}
   _playerEffect: {fileID: 390346897619187505}
   _deathUI: {fileID: 1962581949658760715}
+  _deathUI2: {fileID: 0}
+  virtualCamera: {fileID: 0}
 --- !u!50 &5526782446297703355
 Rigidbody2D:
   serializedVersion: 4
@@ -15749,7 +15751,7 @@ TrailRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 15
   m_Time: 0.2
   m_PreviewTimeScale: 1
   m_Parameters:

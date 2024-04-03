@@ -13,6 +13,7 @@ public class TriggerEnd : MonoBehaviour
     {
         player.GetComponent<CapsuleController>().enabled = false;
         player.GetComponent<SpriteRenderer>().color = defaultColor;
+        player.GetComponent<Rigidbody2D>().gravityScale = 1.8f;
         particleSystem1.Stop();
         particleSystem2.Stop();
     }
