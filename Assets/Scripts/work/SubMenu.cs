@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SubMenu : MonoBehaviour
 {
-    public string _selfLV;
+    public string _mainScene;
+    public string _CPScene;
     public void Menu()
     {
         SceneManager.LoadSceneAsync(0);
@@ -31,8 +32,13 @@ public class SubMenu : MonoBehaviour
         SceneManager.LoadSceneAsync(4);
     }
 
-    public void selfSpawn()
+    public void mainScene()
     {
-        SceneManager.LoadSceneAsync(_selfLV);
+        SceneManager.LoadSceneAsync(_mainScene);
+    }
+
+    public void CPScene()
+    {
+        SceneManager.LoadSceneAsync(_CPScene);
     }
 }
