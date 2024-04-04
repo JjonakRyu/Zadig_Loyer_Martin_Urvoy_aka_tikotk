@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerLife : MonoBehaviour
@@ -16,6 +18,12 @@ public class PlayerLife : MonoBehaviour
     public GameObject boosterDeath;
     public AudioSource source;
     public AudioClip clip;
+
+    public Rigidbody2D playerRigidbody;
+    public TMP_Text scoreText;
+    public float velocityToScoreMultiplier = 0.1f;
+    public bool isDead;
+    private float score = 0f;
 
     void Start()
     {
@@ -40,6 +48,8 @@ public class PlayerLife : MonoBehaviour
             virtualCamera.GetComponent<Animator>().Play("AnimDeath");
             source.PlayOneShot(clip);
             boosterDeath.GetComponent<SpacebarAudio>().enabled = false;
+            isDead = true;
+            
 
             StartCoroutine(AnimationDeath());
         }
@@ -54,6 +64,7 @@ public class PlayerLife : MonoBehaviour
             virtualCamera.GetComponent<Animator>().Play("AnimDeath");
             source.PlayOneShot(clip);
             boosterDeath.GetComponent<SpacebarAudio>().enabled = false;
+            isDead = true;
 
             StartCoroutine(AnimationDeath2());
         }
@@ -84,8 +95,19 @@ public class PlayerLife : MonoBehaviour
         //SceneManager.LoadSceneAsync(sceneName);
         _deathUI.SetActive(true);
     }
-    //public void respawn()
-    //{
-    //    transform.position = _positionBase;
-    //}
+
+    void Update()
+    {
+        // Calculate score based on player's velocity
+        float velocityMagnitude = playerRigidbody.velocity.magnitude;
+        score += velocityMagnitude * velocityToScoreMultiplier;
+
+        // Update UI text to display the score
+        scoreText.text = "Score: " + Mathf.Round(score);
+
+        if (isDead == true)
+        {
+            velocityToScoreMultiplier = 0f;
+        }
+    }
 }
