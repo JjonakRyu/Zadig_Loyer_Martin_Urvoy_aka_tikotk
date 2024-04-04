@@ -71,6 +71,8 @@ public class PlayerLife : MonoBehaviour
 
         if (isEnabled && collision.CompareTag("EndAnimation"))
         {
+            isDead = true;
+
             StartCoroutine(EndingAnimation());
         }
     }
