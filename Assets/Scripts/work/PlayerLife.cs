@@ -57,6 +57,11 @@ public class PlayerLife : MonoBehaviour
 
             StartCoroutine(AnimationDeath2());
         }
+
+        if (isEnabled && collision.CompareTag("EndAnimation"))
+        {
+            StartCoroutine(EndingAnimation());
+        }
     }
 
     IEnumerator AnimationDeath()
@@ -71,6 +76,13 @@ public class PlayerLife : MonoBehaviour
         yield return new WaitForSeconds(2f);
         //SceneManager.LoadSceneAsync(sceneName);
         _deathUI2.SetActive(true);
+    }
+
+    IEnumerator EndingAnimation()
+    {
+        yield return new WaitForSeconds(2f);
+        //SceneManager.LoadSceneAsync(sceneName);
+        _deathUI.SetActive(true);
     }
     //public void respawn()
     //{

@@ -8,6 +8,7 @@ TagManager:
   - CheckPoint
   - Death_Plat
   - Invincibility
+  - EndAnimation
   layers:
   - Default
   - TransparentFX
