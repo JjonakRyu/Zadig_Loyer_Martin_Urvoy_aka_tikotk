@@ -13,6 +13,9 @@ public class PlayerLife : MonoBehaviour
     public GameObject _deathUI;
     public GameObject _deathUI2;
     public GameObject virtualCamera;
+    public GameObject boosterDeath;
+    public AudioSource source;
+    public AudioClip clip;
 
     void Start()
     {
@@ -35,6 +38,8 @@ public class PlayerLife : MonoBehaviour
             _playerEffect.SetActive(false);
             _player.GetComponent<Rigidbody2D>().simulated = false;
             virtualCamera.GetComponent<Animator>().Play("AnimDeath");
+            source.PlayOneShot(clip);
+            boosterDeath.GetComponent<SpacebarAudio>().enabled = false;
 
             StartCoroutine(AnimationDeath());
         }
@@ -47,6 +52,8 @@ public class PlayerLife : MonoBehaviour
             _playerEffect.SetActive(false);
             _player.GetComponent<Rigidbody2D>().simulated = false;
             virtualCamera.GetComponent<Animator>().Play("AnimDeath");
+            source.PlayOneShot(clip);
+            boosterDeath.GetComponent<SpacebarAudio>().enabled = false;
 
             StartCoroutine(AnimationDeath2());
         }

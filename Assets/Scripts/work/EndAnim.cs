@@ -9,6 +9,8 @@ public class EndAnim : MonoBehaviour
     public GameObject booster;
     public GameObject virtualCamera;
     public GameObject dust;
+    public AudioSource source;
+    public AudioClip clip;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -19,5 +21,6 @@ public class EndAnim : MonoBehaviour
         explosion.SetActive(true);
         dust.SetActive(true);
         virtualCamera.GetComponent<Animator>().Play("AnimCrash");
+        source.PlayOneShot(clip);
     }
 }

@@ -6,6 +6,8 @@ public class ChangeTag : MonoBehaviour
 {
     public float invincibilityDuration = 1.0f;
     public GameObject player;
+    public AudioSource source;
+    public AudioClip clip;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,6 +17,7 @@ public class ChangeTag : MonoBehaviour
 
             GetComponent<Collider2D>().enabled = false;
             player.GetComponent<PlayerLife>().isEnabled = false;
+            source.PlayOneShot(clip);
 
             StartCoroutine(UnactivePlayerLife());
         }
