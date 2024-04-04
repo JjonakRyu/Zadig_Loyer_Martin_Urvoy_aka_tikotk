@@ -130101,7 +130101,11 @@ PrefabInstance:
     - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 692990326}
+    - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 692990324}
     - target: {fileID: 4845085458234442383, guid: 168a70d9674cdb94d903b03893ddc25d, type: 3}
       propertyPath: particleSystem1
       value: 
